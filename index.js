@@ -1,4 +1,4 @@
-ar katzDeli = [];
+var katzDeli = [];
 
 function takeANumber(katzDeliLine, newPerson){
   
