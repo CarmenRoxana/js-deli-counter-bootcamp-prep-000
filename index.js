@@ -1,4 +1,4 @@
-var katzDeli = [];
+ar katzDeli = [];
 
 function takeANumber(katzDeliLine, newPerson){
   
@@ -21,21 +21,12 @@ function currentLine(katzDeliLine) {
  var str='The line is currently: ';
   if(katzDeliLine.length>0) {
     for(let i=0;i<katzDeliLine.length;i++){
-   newLine[i] = `${[i+1]}. ${katzDeliLine[i]}`; 
+   newLine[i] = `${[i+1]}. ${katzDeliLine[i]}`;
+   str += newLine.join(', ');
+    return str;
   } 
+  }
   else {
     return "The line is currently empty.";
-  }
-}
-}
-function currentLine(katzDeliLine){
- var str = `The line is currently: `;
- var newLine = [];
-  if (katzDeliLine.length === 0) return "The line is currently empty.";
- else{
-   for (let i = 0; i < katzDeliLine.length; i++){
-       newLine[i] = i+1+". "+katzDeliLine[i];      }
-    str += newLine.join(', ')
-    return str;
   }
 }
